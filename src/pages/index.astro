@@ -13,30 +13,31 @@ import TitleSection from "@/components/TitleSection.astro"
 ---
 
 <Layout
-  title="Porfolio de Christian Valencia Ojeda - Desarrollador web con 2 años de experiencia"
-  description="Contrata a Christian Valencia Ojeda para crear tu aplicación web. Desarrollador web y editor multimedia. Especializado en crear aplicaciones únicas."
+  title="Portafolio - Christian Valencia Ojeda"
+  description="Artista 3D - Tecnólogo en electrónica y comunicaciones."
 >
   <main class="px-4">
-    <SectionContainer class="py-16 md:py-36">
+    <SectionContainer class="py-28 md:py-32">
       <Hero>
       </slot>
     </Hero>
     </SectionContainer>
-    <div class="space-y-24">
-    <SectionContainer id="experiencia">
+    <div class="space-y-12 ">
+
+    <SectionContainer id="proyectos">
+      <TitleSection>
+        <CodeIcon class="size-8" />
+        Proyectos
+      </TitleSection>
+      <Projects />
+    </SectionContainer>
+
+        <SectionContainer id="experiencia">
       <TitleSection>
         <Briefcase class="size-8" />
         Experiencia laboral
       </TitleSection>
       <Experience />
-    </SectionContainer>
-
-    <SectionContainer id="proyectos">
-      <TitleSection>
-        <CodeIcon class="size-7" />
-        Proyectos
-      </TitleSection>
-      <Projects />
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">

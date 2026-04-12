@@ -7,14 +7,38 @@ import Blender from '../components/icons/Blender.astro';
 import AstroIcon from '../components/icons/AstroIcon.astro';
 import Reactjs from '../components/icons/Reactjs.astro';
 import SolidWorks from '../components/icons/SolidWorks.astro';
+import illustrator from '../components/icons/illustrator.astro';
+import Sketchup from './icons/Sketchup.astro';
+import AferIcon from './icons/AfetIcon.astro';
 
 const TAGS = 
   {
-    ASTROTAG:{
-      name: 'Astro',
-      class: 'bg-[#101D59] text-white',
-      icon: AstroIcon,
+    SOLID:{
+      name: 'SolidWorks',
+      class: 'bg-[#B8161C] text-white',
+      icon: SolidWorks,
     },
+    BLENDER:{
+      name: 'Blender',
+      class: 'bg-[#AD6600] text-white',
+      icon: Blender,
+    },
+    SKETCHUP:{
+      name: 'SketchUp',
+      class: 'bg-[#E72B2D] text-white',
+      icon: Sketchup,
+    },
+    // Falta Corel
+    ILLUSTRATOR:{
+      name: 'Illustrator',
+      class: 'bg-[#A16100] text-white',
+      icon: illustrator,
+    },
+    AFTER:{
+      name: 'Adobe After Effects',
+      class: 'bg-[#00005B] text-white',
+      icon: AferIcon,
+      },
     TAILWIND:{
       name: 'Tailwind CSS',
       class: 'bg-[#3B5F7D] text-white',
@@ -25,38 +49,28 @@ const TAGS =
       class: 'bg-[#103C63] text-white',
       icon: Reactjs,
     },
-    SOLID:{
-      name: 'SolidWorks',
-      class: 'bg-[#B8161C] text-white',
-      icon: SolidWorks,
+    ASTROTAG:{
+      name: 'Astro',
+      class: 'bg-[#101D59] text-white',
+      icon: AstroIcon,
     },
   }
 ---
 
-<article class="flex flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
+<article class="flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
   <div
     class="[&>p]:mb-4 [&>p>strong]:text-purple-800 dark:[&>p>strong]:text-purple-200 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
   >
   <p>
-    Soy Christian, pero mis amigos me dicen "Való". Desde joven me apasiona el desarrollo web y la animación 3D. Hoy me dedico a 
-      <strong>crear páginas web y material 3D </strong> con diversas tecnologías.
-  </p>
+  Tengo un enfoque técnico en mi trabajo y me gusta desarrollar proyectos con precisión, orden y flujos claros que permitan avanzar sin desgaste.<strong> Disfruto el proceso de construir</strong> modelos bien proporcionados y escenas coherentes tanto desde lo técnico como desde lo visual.
 
-  <p>
-    Mi mayor fortaleza es colaborar en la parte visual de los proyectos, 
-      <strong>
-        transformando ideas en diseños 3D, páginas web, videos y contenido multimedia. 
-      </strong>
-      Actualmente, estoy ampliando mis habilidades para potenciar mi trabajo.
-  </p>
+</p>
+<p>
 
-  <p>
-    Toda esta experiencia me ha llevado a desarrollar 
-    <strong>
-        EG Universe
-    </strong>
-      una iniciativa donde fusiono mis tres pasiones: desarrollo web, edición multimedia y música. Con este proyecto, busco ayudar a emprendedores a mostrar sus negocios en línea y darles visibilidad con un enfoque creativo e innovador. 
-  </p><br>
+Actualmente trabajo con <strong>Blender y Solidworks, </strong>y me interesa seguir profundizando en áreas como <strong>VFX y postproducción,</strong> así como en edición de audio como complemento al contenido audiovisual. Me gusta aprender de forma práctica y aplicar lo que estudio directamente en proyectos reales.
+
+  </p>
+<br>
   <p class="flex flex-col items-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row text-2xl font-bold">Habilidades técnicas:</p>
   <ul class="flex flex-column mb-2 gap-x-2">
     {Object.values(TAGS).map((tag) => (
@@ -72,6 +86,6 @@ const TAGS =
   </ul>
 </div>
 
-  <img width="240" height="240" src="yo2.jpg" alt={personalImageAlt} class="h-full order-1 object-cover w-150 p-1 md:order-2 rotate-2 lg:p-2 lg:w-150 rounded-3xl bg-black/20 dark:bg-purple-500/5 ring-1 ring-black/70 dark:ring-white/20 " >
-
+  <!-- <img width="240" height="240" src="yo2.jpg" alt={personalImageAlt} class="h-full order-1 object-cover w-150 p-1 md:order-2 rotate-2 lg:p-2 lg:w-150 rounded-3xl bg-black/20 dark:bg-purple-500/5 ring-1 ring-black/70 dark:ring-white/20 " >
+-->
 </article>

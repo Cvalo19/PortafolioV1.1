@@ -4,6 +4,7 @@ import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 import SocialPill from "@/components/SocialPill.astro"
 import Copytoclip from "@/components/Copytoclip.astro"
+import WhatsappIcon from "./icons/whatsapp.astro"
 ---
 
 <div class="max-w-xl">
@@ -25,20 +26,27 @@ import Copytoclip from "@/components/Copytoclip.astro"
   <h1
     class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
   >
-    Hola, soy Christian Valencia Ojeda
+    Christian Valencia Ojeda
   </h1>
+  <h2
+    class="text-l tracking-tight text-gray-800/90 sm:text-xl dark:text-white/90">
+    Artista 3D | Tecnólogo en electrónica y comunicaciones.
+  </h2>
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-gray-200 [&>strong]:text-gray-800 [&>strong]:font-semibold dark:text-gray-300"
   >
-  +2 años de experiencia. 
-  <strong>Desarrollador web y editor multimedia. </strong>Especializado en la creación y optimización de páginas web, animación 3D y edición de video. <br><br>
-  Enfocado en <strong>diseño visual y UX,</strong> que transforma ideas en contenido impactante.
+  Artista 3D técnico con formación en animación 3D y electrónica y comunicaciones.
+Especializado en <strong> modelado y animación 3D </strong>con enfoque en precisión, proporción y flujos de trabajo eficientes.
++2 años de experiencia en <strong></strong>desarrollo audiovisual.</strong>
+Medellín, Colombia.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
-    <SocialPill href="https://www.linkedin.com/in/christianvalo/">
-      <LinkedInIcon class="size-4" />
-      LinkedIn
-    </SocialPill>
+
+      <SocialPill href="https://wa.me/573229009024" target="_blank">
+      <WhatsappIcon class="size-4" />
+      +57 322 9009024
+      </SocialPill>
+
       <Copytoclip/>
   </nav>
 </div>
