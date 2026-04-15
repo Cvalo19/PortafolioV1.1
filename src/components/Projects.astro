@@ -8,6 +8,10 @@ import Reactjs from '../components/icons/Reactjs.astro';
 import AfterIcon from '../components/icons/AfetIcon.astro';
 import SolidWorks from '../components/icons/SolidWorks.astro';
 import CSS from '../components/icons/CSS.astro';
+import illustrator from '../components/icons/illustrator.astro';
+import Sketchup from './icons/Sketchup.astro';
+import tm from './icons/tm.astro';
+import Corel from './icons/Corel.astro';
 //Buttons
 import LinkButton from '../components/icons/LinkButton.astro';
 import GitHub from '../components/icons/GitHub.astro'
@@ -56,6 +60,26 @@ const TAGS =
       class: 'bg-[#B8161C] text-white',
       icon: SolidWorks,
     },
+    SKETCHUP:{
+      name: 'SketchUp',
+      class: 'bg-[#E72B2D] text-white',
+      icon: Sketchup,
+    },
+    TM:{
+      name: 'Twinmotion',
+      class: 'bg-[#000000] text-white',
+      icon: tm,
+    },
+    ILLUSTRATOR:{
+      name: 'Illustrator',
+      class: 'bg-[#A16100] text-white',
+      icon: illustrator,
+    },
+    COREL:{
+      name: 'CorelDraw',
+      class: 'bg-[#177532] text-white',
+      icon: Corel,
+    },
   }
 
 const PROJECTS = [
@@ -65,14 +89,14 @@ const PROJECTS = [
       description: 'Colección de proyectos visuales creados a lo largo de mi experiencia profesional, incluyendo videos, animaciones y modelado 3D en diversas plataformas.',
       link:'https://www.youtube.com/@ineedito5573',
       image:'/projects/projects02.jpg',
-      tags:[ TAGS.SOLID, TAGS.BLENDER, TAGS.AFTER],
+      tags:[ TAGS.SOLID, TAGS.BLENDER, TAGS.AFTER, TAGS.COREL],
     },
     {
       title: 'Diseño y Visualización 3D de Stands para Eventos y Retail',
       description: 'Proyecto enfocado en el diseño, modelado y renderizado 3D de stands publicitarios para marcas, utilizados en eventos, activaciones comerciales y centros comerciales.',
       link:'https://www.youtube.com/@ineedito5573',
-      image:'/projects/projects02.jpg',
-      tags:[ TAGS.SOLID, TAGS.BLENDER, TAGS.AFTER],
+      image:'/projects/projects04.jpg',
+      tags:[ TAGS.SKETCHUP, TAGS.TM, TAGS.ILLUSTRATOR],
     },
     {
       title: 'EG Universe – Conectando negocios con sus clientes',
