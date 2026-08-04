@@ -10,15 +10,15 @@ import WhatsappIcon from "./icons/whatsapp.astro"
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
     <img
-      class="rounded-full shadow-lg size-24 w-28 h-auto object-contain"
-      src="/yo.jpg"
+      class="rounded-2xl shadow-lg w-32 h-32 object-cover [object-position:center_20%]"
+      src="/yo3.jpg"
       alt={personalImageAlt}
     />
     <a
       href="https://www.linkedin.com/in/christianvalo/"
       target="_blank"
       rel="noopener"
-      class="flex items-center transition md:justify-center md:hover:scale-105"
+      class="flex place-items-end transition md:justify-center md:hover:scale-105"
     >
       <Badge>Disponible para trabajar</Badge>
     </a>
@@ -29,24 +29,35 @@ import WhatsappIcon from "./icons/whatsapp.astro"
     Christian Valencia Ojeda
   </h1>
   <h2
-    class="text-l tracking-tight text-gray-800/90 sm:text-xl dark:text-white/90">
-    Artista 3D | Tecnólogo en electrónica y comunicaciones.
+    class="font-semibold text-xl tracking-tight text-gray-800/90 sm:text-2xl dark:text-white/90">
+    Artista 3D Técnico
   </h2>
+  <h3
+    class="mt-1 italic text-sm tracking-tight text-gray-500/80 sm:text-s dark:text-white/50">
+    Modelado 3D • Visualización • Soluciones Digitales
+  </h3>
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-gray-200 [&>strong]:text-gray-800 [&>strong]:font-semibold dark:text-gray-300"
   >
-  Artista 3D técnico con formación en animación 3D y electrónica y comunicaciones.
-Especializado en <strong> modelado y animación 3D </strong>con enfoque en precisión, proporción y flujos de trabajo eficientes.
-+2 años de experiencia en <strong></strong>desarrollo audiovisual.</strong>
-Medellín, Colombia.
-  </p>
-  <nav class="flex flex-wrap gap-4 mt-8">
+  Artista 3D Técnico especializado en transformar requerimientos complejos en soluciones digitales mediante modelado 3D, visualización y desarrollo web. Mi experiencia combina proyectos de ingeniería, diseño para marcas y desarrollo de aplicaciones, siempre con un enfoque en la precisión, la calidad visual y la optimización de procesos.
 
-      <SocialPill href="https://wa.me/573229009024" target="_blank">
+<strong>Sabaneta, Antioquia, Colombia.</strong>
+</p>
+  <div class="mt-6 space-y-4">
+
+  <div class="flex flex-wrap gap-4">
+    <SocialPill href="https://wa.me/573229009024" target="_blank">
       <WhatsappIcon class="size-4" />
       +57 322 9009024
-      </SocialPill>
+    </SocialPill>
 
-      <Copytoclip/>
-  </nav>
+    <SocialPill href="https://www.linkedin.com/in/christianvalo/" target="_blank">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </div>
+
+  <Copytoclip />
+
+  </div>
 </div>

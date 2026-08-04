@@ -14,70 +14,70 @@ import tm from './icons/tm.astro';
 import Corel from './icons/Corel.astro';
 //Buttons
 import LinkButton from '../components/icons/LinkButton.astro';
+import ShowButton from '../components/icons/ShowButton.astro';
 import GitHub from '../components/icons/GitHub.astro'
-import Link from '../components/icons/Link.astro'
 
 
 const TAGS = 
   {
     HTML:{
       name: 'HTML5',
-      class: 'bg-[#a35910] text-white',
+      class: 'bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: HTML5,
     },
     TAILWIND:{
       name: 'Tailwind CSS',
-      class: 'bg-[#3B5F7D] text-white',
+      class: 'bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: Tailwind,
     },
     BLENDER:{
       name: 'Blender',
-      class: 'bg-[#AD6600] text-white',
+      class: 'bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: Blender,
     },
     ASTROTAG:{
       name: 'Astro',
-      class: 'bg-[#101D59] text-white',
+      class: 'bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: AstroIcon,
     },
     REACTJS:{
       name: 'ReactJs',
-      class: 'bg-[#103C63] text-white',
+      class: 'bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: Reactjs,
     },
     CSS:{
       name: 'CSS',
-      class: 'bg-[#192E8F] text-white',
+      class: 'bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: CSS,
     },
     AFTER:{
-      name: 'Adobe After Effects',
-      class: 'bg-[#00005B] text-white',
+      name: 'After Effects',
+      class: 'bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: AfterIcon,
     },
     SOLID:{
       name: 'SolidWorks',
-      class: 'bg-[#B8161C] text-white',
+      class: 'bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: SolidWorks,
     },
     SKETCHUP:{
       name: 'SketchUp',
-      class: 'bg-[#E72B2D] text-white',
+      class: 'bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: Sketchup,
     },
     TM:{
       name: 'Twinmotion',
-      class: 'bg-[#000000] text-white',
+      class: 'bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: tm,
     },
     ILLUSTRATOR:{
       name: 'Illustrator',
-      class: 'bg-[#A16100] text-white',
+      class: 'bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: illustrator,
     },
     COREL:{
       name: 'CorelDraw',
-      class: 'bg-[#177532] text-white',
+      class: 'bg-gray-100 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: Corel,
     },
   }
@@ -85,26 +85,29 @@ const TAGS =
 const PROJECTS = [
   
       {
-      title: 'Exploración Visual en 3D: Diseño y Animación',
-      description: 'Colección de proyectos visuales creados a lo largo de mi experiencia profesional, incluyendo videos, animaciones y modelado 3D en diversas plataformas.',
+      title: 'Sistema de Monitoreo remoto',
+      description: 'Proyecto de ingeniería orientado al diseño de soluciones para monitoreo remoto, integrando modelado 3D, prototipado y documentación para fabricación.',
       link:'https://www.youtube.com/@ineedito5573',
       image:'/projects/projects02.jpg',
-      tags:[ TAGS.SOLID, TAGS.BLENDER, TAGS.AFTER, TAGS.COREL],
+      tags:[ TAGS.SOLID, TAGS.COREL, TAGS.AFTER],
+      area: 'Ingenieria',
     },
     {
-      title: 'Diseño y Visualización 3D de Stands para Eventos y Retail',
-      description: 'Proyecto enfocado en el diseño, modelado y renderizado 3D de stands publicitarios para marcas, utilizados en eventos, activaciones comerciales y centros comerciales.',
+      title: 'Diseño de estructuras para eventos',
+      description: 'Desarrollo de espacios publicitarios y experiencias visuales para marcas, equilibrando creatividad, identidad visual y viabilidad técnica.',
       link:'https://www.youtube.com/@ineedito5573',
       image:'/projects/projects04.jpg',
-      tags:[ TAGS.SKETCHUP, TAGS.TM, TAGS.ILLUSTRATOR],
+      tags:[ TAGS.SKETCHUP, TAGS.TM, TAGS.ILLUSTRATOR, TAGS.BLENDER],
+      area: 'Diseño comercial',
     },
     {
-      title: 'EG Universe – Conectando negocios con sus clientes',
-      description: 'Estoy utilizando Astro y React.js, la he desarrollado para dar visibilidad a negocios. Astro se encarga de las landing pages, mientras que React.js potencia las tiendas individuales. Aunque su enfoque principal es centralizar la información y dirigir a los clientes a los canales oficiales, también contempla la integración de una pasarela de pagos. Los negocios son pequeños emprendimientos de mis amigos y familiares.',
+      title: 'Plataforma web Valhalla',
+      description: 'Plataforma web desarrollada para la administración y publicación de perfiles profesionales, diseñada para ofrecer una experiencia intuitiva y facilitar la conexión entre clientes y prestadores de servicios.',
       link:'https://www.linkedin.com/in/christianvalo/details/projects/',
       github:'https://github.com/christianvalo19',
       image:'/projects/projects03.jpg',
       tags:[ TAGS.ASTROTAG,TAGS.HTML,TAGS.TAILWIND, TAGS.REACTJS],
+      area: 'Desarrollo web',
     },
 
    
@@ -114,8 +117,9 @@ const PROJECTS = [
 
 
 <div class="flex flex-col gap-y-16">
+  <h2 class="mt-2 text-lg text-gray-700 dark:text-gray-400">Una selección de proyectos que representan mi evolución profesional, desde soluciones de ingeniería y diseño técnico hasta desarrollo web y experiencias digitales.</h2>
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image, title, description, tags, link, github, area }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
@@ -125,6 +129,9 @@ const PROJECTS = [
   </div>
 
   <div class="w-full md:w-1/2 md:max-w-lg">
+  <p class="uppercase tracking-[0.2em] text-xs font-semibold dark:text-violet-300 text-violet-800/90">
+  {area}
+  </p>
     <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
       {title}
     </h3>
@@ -133,9 +140,9 @@ const PROJECTS = [
           {tags.map((tag) => (
             <li>
               <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                class={`flex gap-x-1.5 rounded-full text-[10px] ${tag.class} py-[3px] px-2 `}
               >
-                <tag.icon class="size-4" />
+                <tag.icon class="size-3" />
                 {tag.name}
               </span>
             </li>
@@ -153,8 +160,8 @@ const PROJECTS = [
           )}
           {link && (
             <LinkButton href={link}>
-              <Link class="size-4" />
-              Vista previa
+              <ShowButton class="size-4" />
+              Ver proyecto
             </LinkButton>
           )}
         </footer>
