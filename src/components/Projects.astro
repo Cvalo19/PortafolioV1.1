@@ -13,7 +13,7 @@ import Sketchup from './icons/Sketchup.astro';
 import tm from './icons/tm.astro';
 import Corel from './icons/Corel.astro';
 //Buttons
-import LinkButton from '../components/icons/LinkButton.astro';
+import LinkButton from '../components/LinkButtonSelf.astro';
 import ShowButton from '../components/icons/ShowButton.astro';
 import GitHub from '../components/icons/GitHub.astro'
 
@@ -87,7 +87,7 @@ const PROJECTS = [
       {
       title: 'Sistema de Monitoreo remoto',
       description: 'Proyecto de ingeniería orientado al diseño de soluciones para monitoreo remoto, integrando modelado 3D, prototipado y documentación para fabricación.',
-      link:'https://www.youtube.com/@ineedito5573',
+      link:'projects/halcon',
       image:'/projects/projects02.jpg',
       tags:[ TAGS.SOLID, TAGS.COREL, TAGS.AFTER],
       area: 'Ingenieria',
@@ -95,7 +95,7 @@ const PROJECTS = [
     {
       title: 'Diseño de estructuras para eventos',
       description: 'Desarrollo de espacios publicitarios y experiencias visuales para marcas, equilibrando creatividad, identidad visual y viabilidad técnica.',
-      link:'https://www.youtube.com/@ineedito5573',
+      link:'projects/goodone',
       image:'/projects/projects04.jpg',
       tags:[ TAGS.SKETCHUP, TAGS.TM, TAGS.ILLUSTRATOR, TAGS.BLENDER],
       area: 'Diseño comercial',
@@ -103,7 +103,7 @@ const PROJECTS = [
     {
       title: 'Plataforma web Valhalla',
       description: 'Plataforma web desarrollada para la administración y publicación de perfiles profesionales, diseñada para ofrecer una experiencia intuitiva y facilitar la conexión entre clientes y prestadores de servicios.',
-      link:'https://www.linkedin.com/in/christianvalo/details/projects/',
+      link:'projects/valhalla',
       github:'https://github.com/christianvalo19',
       image:'/projects/projects03.jpg',
       tags:[ TAGS.ASTROTAG,TAGS.HTML,TAGS.TAILWIND, TAGS.REACTJS],
@@ -148,7 +148,6 @@ const PROJECTS = [
             </li>
           ))}
         </ul>
-
       <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
           {github && (

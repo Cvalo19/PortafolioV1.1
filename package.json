@@ -14,7 +14,7 @@
     "@astrojs/react": "^4.2.4",
     "@astrojs/tailwind": "5.1.0",
     "@emailjs/browser": "^4.4.1",
-    "@fontsource-variable/onest": "5.0.2",
+    "@fontsource-variable/onest": "^5.0.2",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "astro": "^4.16.18",

@@ -1,0 +1,113 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import ProjectHero from "../../components/projects/ProjectHero.astro";
+import ProjectSection from "../../components/projects/ProjectSection.astro";
+import ProjectGallery from "../../components/projects/ProjectGallery.astro";
+import ProjectTimeline from "../../components/projects/ProjectTimeline.astro";
+import ProjectTimelineItem from "../../components/projects/ProjectTimelineItem.astro";
+import ProjectReflection from "../../components/projects/ProjectReflection.astro";
+---
+
+<Layout
+  title="Sistema Portátil de Monitoreo Remoto"
+  description="Proyecto desarrollado para integrar soluciones de monitoreo remoto mediante diseño 3D, documentación técnica y fabricación."
+>
+
+  <ProjectHero
+    image="/projects/halcon/hero.jpg"
+    area="Ingeniería"
+    title="Sistema Portátil de Monitoreo Remoto"
+    description="Proyecto desarrollado para integrar soluciones de monitoreo remoto mediante diseño 3D, documentación técnica y fabricación."
+  />
+
+  <ProjectSection title="El desafío">
+    El proyecto surgió a partir de la necesidad de desarrollar una solución de monitoreo remoto considerablemente más compacta y portátil. El reto consistía en integrar múltiples componentes electrónicos dentro de un único sistema de transporte, garantizando una distribución organizada, facilidad de mantenimiento y una estructura preparada para fabricación.
+  </ProjectSection>
+
+
+<ProjectTimeline>
+
+<ProjectTimelineItem
+
+title="Necesidad"
+
+description="Se planteó el desarrollo de una solución de monitoreo remoto más compacta y portátil, capaz de integrar múltiples dispositivos electrónicos dentro de un único sistema de transporte, facilitando su despliegue, operación y mantenimiento."
+
+image="/projects/halcon/01.jpg"
+
+/>
+
+<ProjectTimelineItem
+
+title="Diseño conceptual"
+
+description="Uno de los principales desafíos consistió en optimizar el espacio disponible dentro del maletín, definiendo la distribución de los diferentes componentes electrónicos y diseñando una estructura que garantizara accesibilidad, organización y facilidad de mantenimiento antes de iniciar el modelado detallado."
+
+image="/projects/halcon/02.jpg"
+
+
+/>
+
+<ProjectTimelineItem
+
+title="Modelado CAD"
+
+description="A partir del diseño conceptual se desarrollaron los modelos 3D de cada componente estructural, generando planos técnicos y piezas de integración adaptadas a las dimensiones reales de los equipos electrónicos. Este proceso permitió validar interferencias, ensamblajes y tolerancias antes de la fabricación."
+
+image="/projects/halcon/03.jpg"
+
+/>
+
+<ProjectTimelineItem
+
+title="Prototipo"
+
+description="Antes de fabricar las piezas definitivas se realizaron prototipos en MDF mediante corte láser para verificar dimensiones, puntos de fijación y facilidad de ensamblaje. Esta etapa permitió corregir pequeños ajustes antes de la fabricación en aluminio."
+
+image="/projects/halcon/04.jpg"
+
+
+/>
+
+<ProjectTimelineItem
+
+title="Fabricación"
+
+description="Una vez validados los prototipos, los diseños fueron enviados para su fabricación en aluminio y posteriormente integrados al sistema final. El resultado fue una estructura robusta, precisa y preparada para alojar todos los componentes electrónicos dentro del maletín."
+
+image="/projects/halcon/05.jpg"
+
+/>
+
+<ProjectTimelineItem
+
+title="Resultado final"
+
+description="El proyecto permitió consolidar una solución portátil de monitoreo remoto que integró diseño mecánico, documentación técnica y validación funcional. Además de fortalecer mi experiencia en modelado 3D para ingeniería, este trabajo me enseñó la importancia de documentar, prototipar y validar cada decisión antes de fabricar una pieza definitiva."
+
+image="/projects/halcon/05.jpg"
+
+/>
+
+</ProjectTimeline>
+
+<ProjectReflection>
+
+Este proyecto marcó mi forma de trabajar hasta el día de hoy. Aprendí que un buen diseño no termina cuando el modelo 3D se ve bien, sino cuando cada decisión facilita el ensamblaje, el mantenimiento y la fabricación. También comprendí el valor de validar cada etapa mediante prototipos antes de construir una pieza definitiva, una metodología que sigo aplicando en mis proyectos actuales.
+
+</ProjectReflection>
+
+  <ProjectSection title="Galería">
+    <ProjectGallery
+      images={[
+        "/projects/halcon/01.jpg",
+        "/projects/halcon/02.jpg",
+        "/projects/halcon/03.jpg",
+      ]}
+    />
+  </ProjectSection>
+
+  
+
+</Layout>
