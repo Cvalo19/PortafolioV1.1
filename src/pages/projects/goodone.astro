@@ -1,0 +1,90 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import ProjectHero from "../../components/projects/ProjectHero.astro";
+import ProjectSection from "../../components/projects/ProjectSection.astro";
+import ProjectGallery from "../../components/projects/ProjectGallery.astro";
+import ProjectTimeline from "../../components/projects/ProjectTimeline.astro";
+import ProjectTimelineItem from "../../components/projects/ProjectTimelineItem.astro";
+import ProjectReflection from "../../components/projects/ProjectReflection.astro";
+---
+<Layout
+  title="Diseño de estructuras para eventos"
+  description="Proyecto de diseño comercial orientado al desarrollo de estructuras y espacios visuales para eventos y activaciones de marca."
+>
+
+  <ProjectHero
+    image="/projects/goodone/hero.png"
+    area="Diseño comercial"
+    title="Diseño de estructuras para eventos"
+    description="Desarrollo de propuestas espaciales y estructuras visuales para eventos, integrando identidad de marca, modelado 3D y visualización."
+  />
+
+  <ProjectSection title="El desafío">
+    El reto consistió en transformar las necesidades de comunicación de diferentes marcas en propuestas espaciales capaces de llamar la atención del público y comunicar una identidad visual clara. Cada estructura debía equilibrar creatividad, impacto visual y viabilidad técnica, considerando desde su presencia dentro del espacio hasta la forma en que sus diferentes elementos podían construirse e integrarse.
+  </ProjectSection>
+
+
+  <ProjectTimeline>
+
+    <ProjectTimelineItem
+      title="Necesidad"
+      description="Cada propuesta partía de una necesidad comercial y visual específica. El objetivo era desarrollar estructuras para eventos y activaciones de marca que permitieran generar una presencia atractiva dentro del espacio, adaptándose a la identidad y los requerimientos de cada proyecto."
+      image="/projects/goodone/01.jpg"
+    />
+
+    <ProjectTimelineItem
+      title="Diseño conceptual"
+      description="A partir de los requerimientos se desarrollaron las primeras ideas y composiciones visuales, definiendo la distribución de los elementos, las proporciones y la manera en que la estructura podía comunicar la identidad de la marca. Esta etapa permitió explorar diferentes alternativas antes de avanzar al desarrollo detallado."
+      image="/projects/goodone/02.jpg"
+    />
+
+    <ProjectTimelineItem
+      title="Modelado 3D"
+      description="Las propuestas seleccionadas fueron desarrolladas mediante modelado 3D, permitiendo definir con mayor precisión la geometría, dimensiones y distribución de cada elemento. El modelo facilitó la evaluación de proporciones y ayudó a convertir las ideas iniciales en una propuesta visual y técnicamente más definida."
+      image="/projects/goodone/03.jpg"
+    />
+
+    <ProjectTimelineItem
+      title="Visualización"
+      description="Una vez desarrollados los modelos, se crearon escenas y visualizaciones para presentar las propuestas de una forma más cercana al resultado esperado. La incorporación de materiales, iluminación y contexto permitió comunicar mejor la escala, el impacto visual y la experiencia espacial de cada diseño."
+      image="/projects/goodone/04.jpg"
+    />
+
+    <ProjectTimelineItem
+      title="Desarrollo técnico"
+      description="Además de la propuesta visual, cada diseño requirió considerar aspectos relacionados con su construcción e implementación. La definición de componentes, materiales y sistemas de integración permitió desarrollar soluciones que no solo funcionaran visualmente, sino que también fueran coherentes con las necesidades técnicas del proyecto."
+      image="/projects/goodone/05.jpg"
+    />
+
+    <ProjectTimelineItem
+      title="Resultado final"
+      description="El resultado fue el desarrollo de diferentes propuestas de diseño para eventos y espacios comerciales, utilizando herramientas de modelado y visualización 3D para transformar conceptos en soluciones visuales claras. Cada proyecto permitió integrar creatividad, comunicación de marca y criterios técnicos dentro de un mismo proceso de diseño."
+      image="/projects/goodone/06.jpg"
+    />
+
+  </ProjectTimeline>
+
+
+  <ProjectReflection>
+    Este tipo de proyectos fortaleció mi capacidad para transformar una idea o necesidad comercial en una propuesta visual concreta. Aprendí que una buena visualización no consiste únicamente en crear una imagen atractiva, sino en comunicar una idea con claridad y ayudar a anticipar cómo un diseño puede funcionar dentro de un espacio real. Esta experiencia también fortaleció mi interés por combinar modelado 3D, diseño visual y soluciones técnicas en un mismo proceso creativo.
+  </ProjectReflection>
+
+
+
+  <ProjectSection title="Galería">
+    <ProjectGallery
+      images={[
+        "/projects/halcon/07.jpg",
+        "/projects/halcon/08.jpg",
+        "/projects/halcon/09.jpg",
+        "/projects/halcon/10.jpg",
+        "/projects/halcon/11.jpg",
+        "/projects/halcon/12.jpg",
+      ]}
+    />
+  </ProjectSection>
+
+
+</Layout>
+

@@ -33,13 +33,13 @@ class="relative grid md:grid-cols-[80px_1fr] gap-8">
         <!-- Línea -->
 
         <div
-        class="absolute top-0 bottom-0 w-px bg-neutral-700">
+        class="absolute top-0 bottom-0 w-px dark:bg-neutral-700 bg-neutral-300">
         </div>
 
         <!-- Punto -->
 
         <div
-        class="relative z-10 w-5 h-5 rounded-full bg-[#ddd] border-4 border-[#121212]">
+        class="relative z-10 w-5 h-5 rounded-full dark:bg-[#ddd] border-4 dark:border-[#121212] bg-neutral-600 border-[#7a7676]">
         </div>
 
     </div>
@@ -52,7 +52,7 @@ class="relative grid md:grid-cols-[80px_1fr] gap-8">
         year &&(
 
         <span
-        class="text-sm text-neutral-500">
+        class="text-sm dark:text-neutral-500 text-neutral-700">
 
         {year}
 
@@ -62,14 +62,14 @@ class="relative grid md:grid-cols-[80px_1fr] gap-8">
         }
 
         <h3
-        class="mt-2 text-2xl font-bold text-white">
+        class="mt-2 text-2xl font-bold text-gray-800 dark:text-white">
 
         {title}
 
         </h3>
 
         <p
-        class="mt-4 text-neutral-300 leading-relaxed">
+        class="mt-4 text-gray-600 dark:text-gray-400 leading-relaxed">
 
         {description}
 
@@ -81,7 +81,7 @@ class="relative grid md:grid-cols-[80px_1fr] gap-8">
 
         alt={title}
 
-        class="mt-8 rounded-2xl shadow-xl"
+        class="w-full mt-8 rounded-2xl shadow-xl"
 
         />
 
