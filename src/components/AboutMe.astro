@@ -65,38 +65,86 @@ const TAGS =
       class: 'bg-[#103C63] text-white',
       icon: Reactjs,
     },
+    
   }
 ---
 
-<article class="flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row">
-  <div
-    class="[&>p]:mb-4 [&>p>strong]:text-purple-800 dark:[&>p>strong]:text-purple-200 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
-  >
-  <p>
-  Tengo un enfoque técnico en mi trabajo y me gusta desarrollar proyectos con precisión, orden y flujos claros que permitan avanzar sin desgaste.<strong> Disfruto el proceso de construir</strong> modelos bien proporcionados y escenas coherentes tanto desde lo técnico como desde lo visual.
+<article class="text-gray-700 dark:text-gray-300">
 
-</p>
-<p>
+  <!-- Sobre mí -->
+  <div class="grid items-start gap-12 md:grid-cols-2 md:gap-16">
 
-Actualmente trabajo con <strong>Blender y Solidworks, </strong>y me interesa seguir profundizando en áreas como <strong>VFX y postproducción,</strong> así como en edición de audio como complemento al contenido audiovisual. Me gusta aprender de forma práctica y aplicar lo que estudio directamente en proyectos reales.
+    <!-- Texto -->
+    <div
+      class="text-pretty
+      [&>p]:mb-6
+      [&>p>strong]:font-normal
+      [&>p>strong]:font-mono
+      [&>p>strong]:text-purple-800
+      dark:[&>p>strong]:text-purple-200"
+    >
 
-  </p>
-<br>
-  <p class="flex flex-col items-center gap-8 text-gray-700 dark:text-gray-300 md:flex-row text-2xl font-bold">Habilidades técnicas:</p>
-  <ul class="flex flex-column mb-2 gap-x-2 gap-y-2 items-center justify-center flex-wrap py-2">
-    {Object.values(TAGS).map((tag) => (
-      <li>
-        <span
-          class={`flex gap-x-2 gap-y-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
-        >
-          <tag.icon class="size-4" />
-          {tag.name}
-        </span>
-      </li>
-    ))}
-  </ul>
-</div>
+      <p> Mi nombre es Christian, aunque también me conocen como Való. 
+        Siempre me ha interesado la tecnología y su capacidad para combinarse con diferentes formas de expresión.
+         El diseño 3D, el video, el audio y el diseño gráfico son para mí distintas maneras de contar historias,
+          conectar y convertir ideas en experiencias. </p>
 
-  <!-- <img width="240" height="240" src="yo2.jpg" alt={personalImageAlt} class="h-full order-1 object-cover w-150 p-1 md:order-2 rotate-2 lg:p-2 lg:w-150 rounded-3xl bg-black/20 dark:bg-purple-500/5 ring-1 ring-black/70 dark:ring-white/20 " >
--->
+      <p> También disfruto encontrar formas de hacer el trabajo más eficiente. 
+        Creo que nuestro tiempo es uno de los recursos más valiosos que tenemos, 
+        por eso me gusta optimizar procesos, crear herramientas y buscar soluciones 
+        que permitan aprovecharlo mejor. Siempre estoy aprendiendo, experimentando 
+        con nuevas tecnologías y compartiendo lo que descubro. </p>
+
+      <p> Soy competitivo y me gusta progresar, pero sin dejar de lado los valores.
+         Creo en el crecimiento personal y colectivo, y en utilizar la tecnología 
+         no solo para hacer más, sino para hacerlo mejor. Me entusiasma seguir conectando 
+         creatividad y tecnología para desarrollar experiencias multimedia que aporten algo a los demás. </p>
+
+    </div>
+
+
+    <!-- Foto -->
+    <div class="flex justify-center md:justify-end">
+
+      <div class="max-w-md">
+
+        <img
+          width="600"
+          height="800"
+          src="yo4.jpg"
+          alt={personalImageAlt}
+          class="w-full rotate-2 rounded-3xl bg-black/20 p-1 object-cover ring-1 ring-black/70 dark:bg-purple-500/5 dark:ring-white/20 lg:p-2"
+        />
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Habilidades -->
+  <div class="mt-24 border-t border-black/10 pt-12 dark:border-white/10">
+
+    <p class="mb-8 text-2xl font-bold">
+      Habilidades técnicas
+    </p>
+
+    <ul class="flex flex-wrap items-center gap-2">
+      {Object.values(TAGS).map((tag) => (
+        <li>
+          <span
+            class={`flex items-center gap-2 rounded-full px-3 py-1.5 text-xs ${tag.class}`}
+          >
+            <tag.icon class="size-4" />
+            {tag.name}
+          </span>
+        </li>
+      ))}
+    </ul>
+
+  </div>
+
 </article>
+

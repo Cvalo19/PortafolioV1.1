@@ -1,14 +1,126 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Contactform from '../components/ContactForm.astro';
 ---
 
 <Layout
-  title="Porfolio de Christian Valencia O. - Contacto"
-  description="Contacta a Christian Valencia Ojeda para desarrollar piezas visuales de alta calidad. Artista 3D. Especializado en crear piezas 3D con alta atención al detalle."
+  title="Portafolio de Christian Valencia O. - Contacto"
+  description="Contacta a Christian Valencia Ojeda para desarrollar proyectos de diseño y piezas visuales 3D de alta calidad."
 >
-<main>
-    <Contactform/>
-</main>
+
+  <main class="min-h-screen px-6 py-24 md:px-12 lg:px-20">
+
+    <section class="mx-auto max-w-7xl">
+
+      <!-- Encabezado -->
+      <div class="max-w-4xl">
+
+        <p class="mb-6 text-sm uppercase tracking-[0.3em] text-black/50 dark:text-white/50">
+          Contacto
+        </p>
+
+        <h1 class="text-5xl font-medium leading-[0.95] tracking-tight md:text-7xl lg:text-8xl">
+          ¿Tienes un proyecto
+          <span class="italic">en mente?</span>
+        </h1>
+
+        <p class="mt-8 max-w-2xl text-base leading-relaxed text-black/60 dark:text-white/60 md:text-lg">
+          Estoy disponible para colaborar en proyectos de diseño 3D,
+          visualización y creación de piezas visuales. Cuéntame tu idea
+          y hablemos sobre cómo podemos llevarla a la realidad.
+        </p>
+
+      </div>
+
+
+      <!-- Canales de contacto -->
+      <div class="mt-24 border-t border-black/10 dark:border-white/10">
+
+        <!-- Email -->
+        <a
+          href="mailto:christianvalo@hotmail.com"
+          class="group flex items-center justify-between border-b border-black/10 py-8 transition-opacity hover:opacity-50 dark:border-white/10"
+        >
+
+          <div>
+            <p class="mb-2 text-xs uppercase tracking-[0.2em] text-black/40 dark:text-white/40">
+              Email
+            </p>
+
+            <p class="text-lg md:text-xl">
+              christianvalo@hotmail.com
+            </p>
+          </div>
+
+          <span class="text-2xl transition-transform duration-300 group-hover:translate-x-2">
+            ↗
+          </span>
+
+        </a>
+
+
+        <!-- WhatsApp -->
+        <a
+          href="https://wa.me/573229009024"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex items-center justify-between border-b border-black/10 py-8 transition-opacity hover:opacity-50 dark:border-white/10"
+        >
+
+          <div>
+            <p class="mb-2 text-xs uppercase tracking-[0.2em] text-black/40 dark:text-white/40">
+              WhatsApp
+            </p>
+
+            <p class="text-lg md:text-xl">
+              +57 322 900 9024
+            </p>
+          </div>
+
+          <span class="text-2xl transition-transform duration-300 group-hover:translate-x-2">
+            ↗
+          </span>
+
+        </a>
+
+
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/christianvalo"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex items-center justify-between border-b border-black/10 py-8 transition-opacity hover:opacity-50 dark:border-white/10"
+        >
+
+          <div>
+            <p class="mb-2 text-xs uppercase tracking-[0.2em] text-black/40 dark:text-white/40">
+              LinkedIn
+            </p>
+
+            <p class="text-lg md:text-xl">
+              linkedin.com/in/christianvalo
+            </p>
+          </div>
+
+          <span class="text-2xl transition-transform duration-300 group-hover:translate-x-2">
+            ↗
+          </span>
+
+        </a>
+
+      </div>
+
+
+      <!-- Cierre -->
+      <div class="mt-24 flex justify-end">
+
+        <p class="max-w-md text-right text-2xl italic text-black/80 dark:text-white/80 md:text-4xl">
+          Vamos a crear algo extraordinario.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
 
 </Layout>

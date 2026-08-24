@@ -1,0 +1,73 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import ProjectHero from "../../components/projects/ProjectHero.astro";
+import ProjectSection from "../../components/projects/ProjectSection.astro";
+import ProjectGallery from "../../components/projects/ProjectGallery.astro";
+import ProjectTimeline from "../../components/projects/ProjectTimeline.astro";
+import ProjectTimelineItem from "../../components/projects/ProjectTimelineItem.astro";
+import ProjectReflection from "../../components/projects/ProjectReflection.astro";
+---
+<Layout
+  title="Plataforma web Valhalla"
+  description="Plataforma web desarrollada para la administración y publicación de perfiles profesionales, diseñada para facilitar la conexión entre clientes y prestadores de servicios."
+>
+
+  <ProjectHero
+    image="/projects/valhalla/hero.jpg"
+    area="Desarrollo web"
+    title="Plataforma web Valhalla"
+    description="Desarrollo de una plataforma web orientada a la publicación y administración de perfiles profesionales, integrando diseño de interfaz, frontend y backend."
+  />
+
+  <ProjectSection title="El desafío">
+    El desafío consistió en transformar una idea inicial en una plataforma web funcional que permitiera registrar usuarios, administrar perfiles y mostrar información profesional dentro de un catálogo organizado. El proyecto requería integrar una experiencia de usuario clara con una arquitectura técnica capaz de gestionar autenticación, datos y contenido de forma estructurada.
+  </ProjectSection>
+
+
+  <ProjectTimeline>
+
+    <ProjectTimelineItem
+      title="Idea inicial"
+      description="El proyecto nació a partir de la idea de crear una plataforma donde diferentes prestadores de servicios pudieran contar con un perfil profesional y hacerlo visible dentro de un catálogo. El objetivo era facilitar la consulta de información y crear un punto de conexión más directo entre profesionales y posibles clientes."
+      image="/projects/valhalla/01.jpg"
+    />
+
+    <ProjectTimelineItem
+      title="Definición de la solución"
+      description="Antes de iniciar el desarrollo se definieron las principales funcionalidades de la plataforma, incluyendo registro e inicio de sesión, creación de perfiles, selección de ubicación y visualización de usuarios dentro de un catálogo. Esta etapa permitió establecer una estructura clara para organizar tanto la experiencia del usuario como la información almacenada por la aplicación."
+      image="/projects/valhalla/02.jpg"
+    />
+
+    <ProjectTimelineItem
+      title="Diseño de interfaz"
+      description="Se desarrolló una interfaz enfocada en mantener una navegación clara y una presentación organizada de la información. Se trabajó en la estructura de las diferentes vistas, formularios y elementos de navegación, buscando construir una experiencia visual coherente entre las áreas públicas y las secciones disponibles para usuarios registrados."
+      image="/projects/valhalla/03.jpg"
+    />
+
+    <ProjectTimelineItem
+      title="Desarrollo frontend"
+      description="El frontend fue desarrollado utilizando Astro, React y Tailwind CSS. Esta combinación permitió construir una interfaz moderna y modular, integrando componentes reutilizables y diferentes vistas para el registro, inicio de sesión, catálogo y administración de perfiles."
+      image="/projects/valhalla/04.jpg"
+    />
+
+    <ProjectTimelineItem
+      title="Desarrollo backend"
+      description="Para gestionar la lógica de la aplicación se desarrolló un backend con Node.js, Express y Sequelize. La plataforma incorporó una base de datos para almacenar usuarios y ciudades, además de funcionalidades relacionadas con autenticación, validación de datos y protección de rutas mediante tokens."
+      image="/projects/valhalla/05.jpg"
+    />
+
+    <ProjectTimelineItem
+      title="Integración y resultado"
+      description="Finalmente se integraron frontend y backend para consolidar una plataforma funcional capaz de gestionar el registro y acceso de usuarios, administrar información de perfiles y mostrar los servicios dentro de una estructura organizada. El proyecto permitió convertir una idea inicial en una solución web completa desarrollada de forma modular."
+      image="/projects/valhalla/06.jpg"
+    />
+
+  </ProjectTimeline>
+
+
+  <ProjectReflection>
+    Valhalla fue uno de los proyectos que más fortaleció mi interés por el desarrollo de soluciones digitales. Me permitió enfrentar un proyecto completo, desde la definición de sus funcionalidades hasta la integración entre interfaz, lógica de negocio y base de datos. Durante el proceso comprendí la importancia de diseñar una aplicación de forma modular, estructurar correctamente la información y tomar decisiones técnicas pensando en la evolución futura del proyecto.
+  </ProjectReflection>
+
+</Layout>

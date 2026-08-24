@@ -12,6 +12,8 @@ import illustrator from '../components/icons/illustrator.astro';
 import Sketchup from './icons/Sketchup.astro';
 import tm from './icons/tm.astro';
 import Corel from './icons/Corel.astro';
+import express from './icons/express.astro';
+import sequelize from './icons/sequelize.astro';
 //Buttons
 import LinkButton from '../components/LinkButtonSelf.astro';
 import ShowButton from '../components/icons/ShowButton.astro';
@@ -80,6 +82,16 @@ const TAGS =
       class: 'bg-gray-400/85 text-gray-800 dark:text-white dark:bg-gray-800',
       icon: Corel,
     },
+    EXPRESS:{
+      name: 'Express.js',
+      class: 'bg-gray-400/85 text-gray-800 dark:text-white dark:bg-gray-800',
+      icon: express,
+    },
+    SEQUELIZE:{
+      name: 'Sequelize',
+      class: 'bg-gray-400/85 text-gray-800 dark:text-white dark:bg-gray-800',
+      icon: sequelize,
+    },
   }
 
 const PROJECTS = [
@@ -106,7 +118,7 @@ const PROJECTS = [
       link:'projects/valhalla',
       github:'https://github.com/christianvalo19',
       image:'/projects/projects03.jpg',
-      tags:[ TAGS.ASTROTAG,TAGS.HTML,TAGS.TAILWIND, TAGS.REACTJS],
+      tags:[ TAGS.ASTROTAG,TAGS.TAILWIND, TAGS.REACTJS, TAGS.EXPRESS, TAGS.SEQUELIZE],
       area: 'Desarrollo web',
     },
 
